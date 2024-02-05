@@ -6,7 +6,7 @@ const Connection = async (username, password) => {
     // const URL = `mongodb+srv://user:Izhaan123@cluster0.uzgbews.mongodb.net/?retryWrites=true&w=majority`
     // const URL = `mongodb+srv://user:123@cluster0.ilz25mo.mongodb.net/?retryWrites=true&w=majority`
 
-    const URL = `mongodb+srv://user:123@cluster0.ilz25mo.mongodb.net/?retryWrites=true&w=majority`
+    const URL = `mongodb+srv://user:123@cluster0.ipeb6cq.mongodb.net/?retryWrites=true&w=majority`
     
     try {
         await mongoose.connect(URL, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
