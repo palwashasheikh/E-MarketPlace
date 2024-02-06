@@ -7,11 +7,11 @@ import { addPaymentGateway, paymentResponse } from '../controller/payment-contro
 const router = express.Router();
 
 //login & signup
-router.post('/signup', userSignUp);
-router.post('/login', userLogIn);
+router.post('api/signup', userSignUp);
+router.post('api/login', userLogIn);
 
-router.get('/products', getProducts);
-router.get('/product/:id', getProductById);
+router.get('api/products', getProducts);
+router.get('api/product/:id', getProductById);
 
 // router.post('/cart/add', addItemInCart);
 
