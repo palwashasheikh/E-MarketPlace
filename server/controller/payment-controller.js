@@ -1,9 +1,11 @@
 import paytmchecksum from '../paytm/PaytmChecksum.js';
-import { paytmParams, paytmMerchantkey } from '../index.js';
+// import { paytmParams, paytmMerchantkey } from '../index.js';
 import formidable from 'formidable';
 import https from 'https';
 
 
+var paytmParams = require('../index.js');
+var paytmMerchantkey = require('../index.js');
 
 export const addPaymentGateway = async (request, response) => {
     const paytmCheckSum = await paytmchecksum.generateSignature(paytmParams, paytmMerchantkey);
