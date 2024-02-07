@@ -30,8 +30,8 @@ app.use('/', Routes);
 
 
 
-module.exports   = process.env.PAYTM_MERCHANT_KEY;
-module.exports = paytmParams = {};
+// module.exports   = process.env.PAYTM_MERCHANT_KEY;
+// module.exports = paytmParams = {};
 
 paytmParams['MID'] = process.env.PAYTM_MID,
 paytmParams['WEBSITE'] = process.env.PAYTM_WEBSITE,
