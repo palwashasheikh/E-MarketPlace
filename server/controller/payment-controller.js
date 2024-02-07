@@ -4,8 +4,8 @@ import formidable from 'formidable';
 import https from 'https';
 
 
-var paytmParams = require('../index.js');
-var paytmMerchantkey = require('../index.js');
+var paytmParams = import('../index.js');
+var paytmMerchantkey = import('../index.js');
 
 export const addPaymentGateway = async (request, response) => {
     const paytmCheckSum = await paytmchecksum.generateSignature(paytmParams, paytmMerchantkey);
