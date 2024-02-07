@@ -43,6 +43,9 @@ paytmParams['CALLBACK_URL'] = 'http://localhost:8000/callback'
 paytmParams['EMAIL'] = 'kunaltyagi@gmail.com'
 paytmParams['MOBILE_NO'] = '1234567852'
 
+const whitelist = [
+    '*'
+  ];
 
 app.use((req, res, next) => {
     const origin = req.get('referer');
